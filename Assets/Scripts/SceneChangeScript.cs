@@ -32,6 +32,11 @@ public class SceneChangeScript : MonoBehaviour
             yield return fadeScript.FadeIn(0.1f);
             SceneManager.LoadScene(1, LoadSceneMode.Single);
         }
+        else if (string.Equals(command, "settings", StringComparison.OrdinalIgnoreCase))
+        {
+            yield return fadeScript.FadeIn(0.1f);
+            SceneManager.LoadScene(2, LoadSceneMode.Single);
+        }
     }
 
 }
